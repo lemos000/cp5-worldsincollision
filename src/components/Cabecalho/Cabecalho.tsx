@@ -1,3 +1,3 @@
 export default function Cabecalho() {
-    return
+    return (<div></div>);
 };

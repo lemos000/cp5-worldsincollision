@@ -1,3 +1,4 @@
 export default function opcao02() {
-    return
+    return(<div></div>)
+    
 }

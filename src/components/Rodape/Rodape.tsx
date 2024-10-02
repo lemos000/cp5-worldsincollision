@@ -1,3 +1,3 @@
 export default function Rodape() {
-    return
+    return <div></div>
 };
