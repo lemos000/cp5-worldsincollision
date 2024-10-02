@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Nasa from "../public/nasa-logo.png";
 import Link from "next/link";
+import Nasa from "../public/nasa-logo.png";
 
 export default function Home() {
   return (
@@ -10,22 +10,22 @@ export default function Home() {
       <h2 className="text-2xl text-center mb-8">Immanuel Velikovsky</h2>
       <div className="flex gap-4">
         <Link href="/page1">
-          <div className="bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer">
+          <div className="border-2 border-transparent bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer hover:border-red-600 hover:bg-blue-900 transition duration-300">
             🚀 Opção 1
           </div>
         </Link>
         <Link href="/page2">
-          <div className="bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer">
+          <div className="border-2 border-transparent bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer hover:border-red-600 hover:bg-blue-900 transition duration-300">
             🚀 Opção 2
           </div>
         </Link>
         <Link href="/page3">
-          <div className="bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer">
+          <div className="border-2 border-transparent bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer hover:border-red-600 hover:bg-blue-900 transition duration-300">
             🚀 Opção 3
           </div>
         </Link>
         <Link href="/page4">
-          <div className="bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer">
+          <div className="border-2 border-transparent bg-gray-800 p-4 rounded-lg text-center flex items-center justify-center cursor-pointer hover:border-red-600 hover:bg-blue-900 transition duration-300">
             🚀 Opção 4
           </div>
         </Link>
