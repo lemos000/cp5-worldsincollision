@@ -3,6 +3,7 @@ import { API_KEY, URL } from "@/data/global";
 
 export async function GET() {
 
-    const dados = await fetch(URL + "apod" + API_KEY)
-    return NextResponse.json(dados);
+    const response = await fetch(URL + API_KEY)
+    const dadosJson = await response.json()
+    return NextResponse.json(dadosJson);
 }
