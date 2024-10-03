@@ -1,36 +1,40 @@
 "use client"
+import { API_KEY } from "@/data/global";
 import { NasaType } from "@/types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Opcao01({ params }: { params: {date: string}}) {
-    const [nasa, setNasa] = useState<NasaType>({
-        title: "string", 
-        url: "string", 
-        service_version: "string", 
-        media_type: "string", 
-        explanation: "string", 
-        date: "string"
-      })
-  
-      useEffect(() => {
-        const consumoApi = async ()=>{
-          const response = await fetch(`http://localhost:3000/api/nasa/${params.date}`);
-          const dados = await response.json();
-          setNasa(dados);
+export default function Opcao01({ params }: { params: { date: string } }) {
+  const [nasa, setNasa] = useState<NasaType | null>(null);
+
+  useEffect(() => {
+    const consumoApi = async () => {
+      try {
+        const response = await fetch(`${URL}?api_key=${API_KEY}&date=${params.date}`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
         }
-        consumoApi();
-      }, [nasa, params.date]);
-    return (
-        <div>
-            <h1>{nasa.title}</h1>
-            <Image src={nasa.url} alt="Nasa Image"></Image>
-            <p>{nasa.date}</p>
-            <p>{nasa.explanation}</p>
+        const dados = await response.json();
+        setNasa(dados);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    consumoApi();
+  }, [params.date]);
 
-        </div>
+  if (!nasa) {
+    return <div>Loading...</div>;
+  }
 
-
-
-    )
+  return (
+    <div>
+      <h1>{nasa.title}</h1>
+      {nasa.media_type === "image" && (
+        <Image src={nasa.url} alt="Nasa Image" width={500} height={500} />
+      )}
+      <p>{nasa.date}</p>
+      <p>{nasa.explanation}</p>
+    </div>
+  );
 }
