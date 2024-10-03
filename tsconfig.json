@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/pages/opcao04"
+    "src/app/pages/opcao4"
   ],
   "exclude": [
     "node_modules"
