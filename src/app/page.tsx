@@ -11,7 +11,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-center mb-2">Worlds in Collision</h1>
       <h2 className="text-2xl text-center mb-8">Immanuel Velikovsky</h2>
       <div className="flex gap-8">
-        <Link href="/pages/opcao1/page.tsx">
+        <Link href="/pages/opcao01">
         <motion.div
       className="bg-white/10 rounded-lg p-5 backdrop-blur-sm"
       initial={{ y: 30, opacity: 0, scale: 0.8 }}
@@ -25,7 +25,7 @@ export default function Home() {
         duration: 1.5
       }}
       whileHover={{
-        scale: 1.05, // Leve aumento no tamanho
+        scale: 1.05,
         boxShadow: '0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)',
       }}
       style={{
@@ -35,7 +35,7 @@ export default function Home() {
             🌌 Opção 1
           </motion.div>
         </Link>
-        <Link href="/pages/opcao2/page.tsx">
+        <Link href="/pages/opcao02">
         <motion.div
       className="bg-white/10 rounded-lg p-5 backdrop-blur-sm"
       initial={{ y: 30, opacity: 0, scale: 0.8 }}
@@ -49,7 +49,7 @@ export default function Home() {
         duration: 1.5
       }}
       whileHover={{
-        scale: 1.05, // Leve aumento no tamanho
+        scale: 1.05,
         boxShadow: '0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)',
       }}
       style={{
@@ -59,7 +59,7 @@ export default function Home() {
             🌌 Opção 2
           </motion.div>
         </Link>
-        <Link href="/pages/opcao3/page.tsx">
+        <Link href="/pages/opcao03">
         <motion.div
       className="bg-white/10 rounded-lg p-5 backdrop-blur-sm"
       initial={{ y: 30, opacity: 0, scale: 0.8 }}
@@ -73,7 +73,7 @@ export default function Home() {
         duration: 1.5
       }}
       whileHover={{
-        scale: 1.05, // Leve aumento no tamanho
+        scale: 1.05,
         boxShadow: '0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)',
       }}
       style={{
@@ -83,7 +83,7 @@ export default function Home() {
             🌌 Opção 3
           </motion.div>
         </Link>
-        <Link href="/pages/opcao4/page.tsx">
+        <Link href="/pages/opcao04">
         <motion.div
       className="bg-white/10 rounded-lg p-5 backdrop-blur-sm"
       initial={{ y: 30, opacity: 0, scale: 0.8 }}
@@ -97,7 +97,7 @@ export default function Home() {
         duration: 1.5
       }}
       whileHover={{
-        scale: 1.05, // Leve aumento no tamanho
+        scale: 1.05,
         boxShadow: '0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)',
       }}
       style={{
