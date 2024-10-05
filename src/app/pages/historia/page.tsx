@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Idoso from "../../../public/img/immanuel.jpg";
-import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Livro from "../../../public/img/livro.jpg"
 export default function Historia() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Cabecalho />
       <main className="flex flex-col justify-center items-center p-6">
         <h1 className="text-center font-bold text-4xl m-5 text-gray-800">
           A Vida de Immanuel Velikovsky

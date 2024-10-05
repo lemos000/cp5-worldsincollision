@@ -11,9 +11,9 @@ export default function Cabecalho() {
             <nav className="flex gap-3 text-lg">
                 <Link className="hover:underline" href={'/'}>Home</Link>
                 <Link className="hover:underline" href={'/pages/historia'}>História</Link>
-                <Link className="hover:underline" href={'/pages'}>Ideias</Link>
-                <Link className="hover:underline" href={'/'}>Worlds in Collision</Link>
-                <Link className="hover:underline" href={'/'}>Cálculos</Link>
+                <Link className="hover:underline" href={'/pages/legado'}>Ideias</Link>
+                <Link className="hover:underline" href={'/pages/vida'}>Worlds in Collision</Link>
+                <Link className="hover:underline" href={'/pages/teorias'}>Cálculos</Link>
             </nav>
         </div>
     );

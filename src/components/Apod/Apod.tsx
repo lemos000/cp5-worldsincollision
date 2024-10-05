@@ -1,6 +1,7 @@
 "use client"
 import { NasaType } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react"
 
 export default function Apod(){
@@ -37,7 +38,7 @@ export default function Apod(){
     }, [selectedDate]);
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="my-24 flex flex-col justify-center items-center">
             <h2>Escolha um dia para ver a foto!</h2>
             <input
                 className="text-black"
@@ -58,6 +59,7 @@ export default function Apod(){
                     <p className="ml-4">{apod.explanation}</p>
                 </section>
             </div>
+            <Link className="bg-blue-700 text-white p-4 rounded-xl hover:bg-blue-900" href={`/pages/apod/${apod.date}`}>SABER MAIS</Link>
         </div>
     );
 }

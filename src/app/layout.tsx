@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
+import Rodape from "@/components/Rodape/Rodape";
 
 export const viewport: Viewport = {
   viewportFit: "auto"  
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+        <Cabecalho></Cabecalho>
         {children}
+        <Rodape></Rodape>
       </body>
     </html>
   );
