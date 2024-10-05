@@ -12,8 +12,8 @@ export default function Cabecalho() {
                 <Link className="hover:underline" href={'/'}>Home</Link>
                 <Link className="hover:underline" href={'/pages/historia'}>História</Link>
                 <Link className="hover:underline" href={'/pages/legado'}>Ideias</Link>
-                <Link className="hover:underline" href={'/pages/vida'}>Worlds in Collision</Link>
-                <Link className="hover:underline" href={'/pages/teorias'}>Cálculos</Link>
+                <Link className="hover:underline" href={'/pages/vida'}>Vida</Link>
+                <Link className="hover:underline" href={'/pages/teorias'}>Teorias</Link>
             </nav>
         </div>
     );

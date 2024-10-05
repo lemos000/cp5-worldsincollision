@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <div className="min-h-dvh flex flex-col items-center justify-center bg-gradient-to-t from-black to-blue-900 text-white">
-        <Image src={Nasa} alt="Nasa logo" className="mb-4 h-40 w-auto" />
+        <Image src={Nasa} alt="Nasa logo" className="my-11 h-40 w-auto" />
         <h1 className="text-4xl font-bold text-center mb-2">
           Worlds in Collision
         </h1>
