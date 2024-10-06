@@ -2,7 +2,8 @@
 import { NasaType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Apod(){
     const [apod, setApod] = useState<NasaType>({
@@ -59,7 +60,32 @@ export default function Apod(){
                     <p className="ml-4">{apod.explanation}</p>
                 </section>
             </div>
-            <Link className="bg-blue-700 text-white p-4 rounded-xl hover:bg-blue-900" href={`/pages/apod/${apod.date}`}>SABER MAIS</Link>
+            <Link href={`/pages/apod/${apod.date}`}>
+            <motion.div
+              className="bg-white/10 rounded-lg p-5 backdrop-blur-sm"
+              initial={{ y: 30, opacity: 0, scale: 0.8 }}
+              animate={{
+                y: [0, -10, 0],
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                ease: "easeInOut",
+                duration: .5,
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow:
+                  "0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)",
+              }}
+              style={{
+                boxShadow:
+                  "0 0 15px rgba(0, 175, 255, 0.5), 0 0 30px rgba(0, 175, 255, 0.3)",
+              }}
+              >
+                SABER MAIS
+                </motion.div>
+            </Link>
         </div>
     );
 }

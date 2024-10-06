@@ -3,6 +3,7 @@ import { NasaType } from "@/types";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function About({ params }: { params: { date: string } }) {
   const [apod, setApod] = useState<NasaType>({
@@ -34,7 +35,7 @@ export default function About({ params }: { params: { date: string } }) {
   }, [selectedDate]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-black to-blue-900 p-4">
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl flex flex-col justify-center items-center">
         <h1 className="text-2xl font-semibold text-center mb-4">
           Foto Astronômica do Dia {params.date}
@@ -62,10 +63,31 @@ export default function About({ params }: { params: { date: string } }) {
           <p className="text-black mb-6">Carregando...</p>
         )}
         <p className="text-lg text-center mb-6">{apod.explanation}</p>
-        <Link href={'/'}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          Voltar
+        <Link href={'/'}>
+        <motion.div
+              className="bg-blue-900 rounded-lg p-5 backdrop-blur-sm text-white"
+              initial={{ y: 30, opacity: 0, scale: 0.8 }}
+              animate={{
+                y: [0, -10, 0],
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                ease: "easeInOut",
+                duration: .5,
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow:
+                  "0 0 25px rgba(0, 175, 255, 0.9), 0 0 50px rgba(0, 175, 255, 0.7)",
+              }}
+              style={{
+                boxShadow:
+                  "0 0 15px rgba(0, 175, 255, 0.5), 0 0 30px rgba(0, 175, 255, 0.3)",
+              }}
+            >
+              Voltar
+            </motion.div>
         </Link>
       </div>
     </div>

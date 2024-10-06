@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Idoso from "../../../public/img/immanuel.jpg";
 import Livro from "../../../public/img/livro.jpg";
 import Velikovsky from "@/public/img/velikas.jpg";
-import Livro2 from "@/public/img/livro2.jpg"
-import Livro3 from "@/public/img/livro3.jpg"
-import Immanuel from "@/public/img/immanuel2.jpeg"
-import Immanuel2 from "@/public/img/immanuel3.jpg"
+import Livro2 from "@/public/img/livro2.jpg";
+import Livro3 from "@/public/img/livro3.jpg";
+import Immanuel from "@/public/img/immanuel2.jpeg";
+import Immanuel2 from "@/public/img/immanuel3.jpg";
 
 export default function Legado() {
   return (
@@ -26,9 +25,9 @@ export default function Legado() {
         </div>
       </div>
 
-      <main className="flex flex-col justify-center items-center p-6 bg-gray-100">
+      <main className="flex flex-col justify-center items-center p-6 bg-gradient-to-t from-black to-blue-900">
         <div className="flex flex-col lg:flex-row gap-8 my-11 justify-around items-center max-w-screen-lg">
-          <section className="text-lg lg:text-xl flex-1 text-gray-700">
+          <section className="text-lg lg:text-xl flex-1 text-white">
             <p className="mb-6">
               O legado intelectual de Immanuel Velikovsky é marcado por uma
               série de obras controversas que desafiaram o pensamento
@@ -38,7 +37,7 @@ export default function Legado() {
               tiveram um impacto duradouro em certos círculos e continuam a
               ser objeto de discussão até os dias atuais. Vamos explorar em
               detalhes suas obras mais conhecidas e a recepção que elas
-              receberam."Worlds in Collision", publicado em 1950, é sem dúvida
+              receberam. "Worlds in Collision", publicado em 1950, é sem dúvida
               a obra mais famosa e influente de Velikovsky. Este livro
               apresentou sua teoria mais audaciosa e controversa: a ideia de
               que, em tempos históricos recentes, grandes catástrofes de
@@ -132,7 +131,7 @@ export default function Legado() {
               className="rounded-lg shadow-lg"
             />
           </div>
-          <section className="text-lg lg:text-xl flex-1 text-gray-700">
+          <section className="text-lg lg:text-xl flex-1 text-white">
             <p>
               A tese central de Ages in Chaos era que o período do Êxodo
               bíblico coincidia com o fim do Império Médio do Egito, e não com

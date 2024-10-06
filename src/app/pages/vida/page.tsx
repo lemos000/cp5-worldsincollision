@@ -1,52 +1,44 @@
 import Image from "next/image";
-import Idoso from "../../../public/img/immanuel.jpg";
-import Livro from "../../../public/img/livro.jpg";
-import Velikovsky from "@/public/img/velikas.jpg"
+import Esposa from "../../../public/img/immanuel-velikovsky.jpg";
+import Veli from "@/public/img/immveli.jpg";
 
 export default function Vida() {
   return (
     <div className="relative">
       <div className="relative w-full h-[50rem]">
         <Image
-          src={Idoso}
-          alt="Immanuel"
+          src={Esposa}
+          alt="Immanuel e sua esposa"
           layout="fill"
           objectFit="cover"
           className="absolute inset-0 z-0"
         />
         <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
         <div className="relative z-20 flex justify-center items-center h-full">
-          <h1 className="text-center font-bold text-[6rem] bg-clip-text text-indigo-300">
-            A História de Immanuel Velikovsky
+          <h1 className="text-center font-bold text-[4rem] bg-clip-text text-indigo-300">
+            A Vida Pessoal de Immanuel Velikovsky
           </h1>
         </div>
       </div>
 
-      <main className="flex flex-col justify-center items-center p-6 bg-gray-100">
+      <main className="flex flex-col justify-center items-center p-6 bg-gradient-to-t from-black to-blue-900">
         <div className="flex flex-col lg:flex-row gap-8 my-11 justify-around items-center max-w-screen-lg">
-          <div className="flex flex-col lg:flex-row gap-8 items-center">
-            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-gray-700 max-w-lg">
+          <div className="flex flex-col gap-8 items-center">
+            <Image src={Veli} alt="Imagem de Immanuel" width={300} height={400} className="rounded-lg shadow-lg" />
+          </div>
+            <section className="text-lg lg:text-xl flex-1 text-white">
               <p className="mb-6">
-                O impacto de Immanuel Velikovsky no mundo acadêmico foi profundo e duradouro, embora nem sempre da maneira que ele próprio poderia ter desejado. Sua entrada no cenário intelectual na década de 1950 provocou uma tempestade de controvérsias que reverberou por décadas, influenciando não apenas os campos específicos que ele abordou, mas também levantando questões fundamentais sobre a natureza da ciência, o papel do ceticismo e a relação entre a academia e o público em geral.
-              </p>
-              <p>
-                Quando Velikovsky publicou Worlds in Collision em 1950, o livro caiu como uma bomba no mundo acadêmico. Sua proposta de que eventos catastróficos cósmicos haviam moldado a história recente da Terra e que esses eventos poderiam ser correlacionados com mitos antigos e textos religiosos desafiou não apenas o consenso científico estabelecido, mas também os próprios métodos pelos quais esse consenso era alcançado.
-              </p>
-            </section>
-            <Image src={Velikovsky} alt="Imagem de Immanuel" width={300} height={400} className="rounded-lg shadow-lg" />
-          </div>
-        </div>
+              Immanuel Velikovsky nasceu em 10 de junho de 1895, em Vitebsk, no então Império Russo (hoje Belarus). Ele cresceu em uma família judia culta e de classe média, o que lhe proporcionou uma educação sólida desde jovem. Seus pais, Shimon Velikovsky e Beila Grodensky Velikovsky, eram conhecidos por sua inteligência e dedicação à educação dos filhos. Durante sua juventude, Velikovsky estudou em várias cidades europeias, como Berlim e Montpellier, onde foi exposto a uma ampla gama de ideias intelectuais e científicas.
 
-        <div className="flex flex-col lg:flex-row gap-8 my-11 justify-around items-center max-w-screen-lg">
-          <div className="flex flex-col lg:flex-row gap-8 items-center">
-            <Image src={Livro} alt="Livro" width={300} height={400} className="rounded-lg shadow-lg" />
-            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-gray-700 max-w-lg">
+              Velikovsky concluiu seus estudos de medicina na Universidade de Moscou em 1921, logo após a Revolução Russa. Ele migrou para a Alemanha, onde conheceu e se casou com Elisheva Kramer, uma pianista e musicóloga. O casal mais tarde se estabeleceu na Palestina, que na época estava sob o mandato britânico. Lá, Velikovsky combinou sua carreira como médico com um crescente interesse por história, mitologia e ciências.              </p>
               <p>
-                O caso Velikovsky também levantou questões importantes sobre interdisciplinaridade na ciência. Velikovsky, com sua formação em medicina e psicanálise, estava propondo teorias que abrangiam astronomia, geologia, arqueologia e mitologia comparada. Sua abordagem desafiou as fronteiras tradicionais entre disciplinas acadêmicas, argumentando que insights significativos poderiam ser obtidos através da síntese de conhecimentos de campos diversos.
+              A partir de 1939, Velikovsky se mudou com sua família para os Estados Unidos, onde começou a desenvolver suas teorias mais polêmicas. Ele ficou conhecido principalmente por seu livro Mundos em Colisão (1950), onde sugeriu que eventos catastróficos no sistema solar, especialmente envolvendo o planeta Vênus, influenciaram profundamente a história da Terra. Suas ideias controversas, que desafiavam a ciência convencional, fizeram dele uma figura amplamente debatida.
+
+              Apesar da controvérsia, Velikovsky manteve uma vida pessoal tranquila, dedicando-se à sua família e ao desenvolvimento de suas teorias. Ele e sua esposa tiveram duas filhas, Shulamit e Ruth. Ao longo de sua vida, Velikovsky manteve correspondências com cientistas e intelectuais, tentando buscar apoio e compreensão para suas ideias.
+
+              Velikovsky continuou a escrever e desenvolver suas teorias até sua morte, em 17 de novembro de 1979, aos 84 anos, em Princeton, Nova Jersey.
               </p>
-              <p>Sua obra mais famosa</p>
             </section>
-          </div>
         </div>
       </main>
     </div>
