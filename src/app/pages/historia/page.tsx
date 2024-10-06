@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Idoso from "../../../public/img/immanuel.jpg";
 import Livro from "../../../public/img/livro.jpg";
-import Velikovsky from "@/public/img/velikas.jpg"
+import Velikovsky from "@/public/img/velikas.jpg";
 
 export default function Historia() {
   return (
@@ -22,10 +22,10 @@ export default function Historia() {
         </div>
       </div>
 
-      <main className="flex flex-col justify-center items-center p-6 bg-gray-100">
+      <main className="flex flex-col justify-center items-center p-6 bg-gradient-to-t from-black to-blue-900">
         <div className="flex flex-col lg:flex-row gap-8 my-11 justify-around items-center max-w-screen-lg">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-gray-700 max-w-lg">
+            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-white ">
               <p className="mb-6">
                 O impacto de Immanuel Velikovsky no mundo acadêmico foi profundo e duradouro, embora nem sempre da maneira que ele próprio poderia ter desejado. Sua entrada no cenário intelectual na década de 1950 provocou uma tempestade de controvérsias que reverberou por décadas, influenciando não apenas os campos específicos que ele abordou, mas também levantando questões fundamentais sobre a natureza da ciência, o papel do ceticismo e a relação entre a academia e o público em geral.
               </p>
@@ -38,13 +38,15 @@ export default function Historia() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 my-11 justify-around items-center max-w-screen-lg">
-          <div className="flex flex-col lg:flex-row gap-8 items-center">
+          <div className="relative flex flex-col lg:flex-row gap-8 items-center">
             <Image src={Livro} alt="Livro" width={300} height={400} className="rounded-lg shadow-lg" />
-            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-gray-700 max-w-lg">
+            <p className="absolute bottom-2 left-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">
+            Sua obra mais famosa
+            </p>
+            <section className="text-lg lg:text-xl flex flex-col justify-evenly text-white">
               <p>
                 O caso Velikovsky também levantou questões importantes sobre interdisciplinaridade na ciência. Velikovsky, com sua formação em medicina e psicanálise, estava propondo teorias que abrangiam astronomia, geologia, arqueologia e mitologia comparada. Sua abordagem desafiou as fronteiras tradicionais entre disciplinas acadêmicas, argumentando que insights significativos poderiam ser obtidos através da síntese de conhecimentos de campos diversos.
               </p>
-              <p>Sua obra mais famosa</p>
             </section>
           </div>
         </div>

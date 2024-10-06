@@ -19,7 +19,9 @@ export default function Rodape() {
 
 
         <div className="mb-6 md:mb-0">
-          <Image src={Logo} alt="Design2Tailwind" width={150} height={50} />
+          <Link href="/" passHref>
+            <Image src={Logo} alt="Design2Tailwind" width={150} height={50} />
+          </Link>
         </div>
 
         <div>

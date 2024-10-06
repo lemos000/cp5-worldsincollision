@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-// import Link from "next/link";
 import Nasa from "../public/img/nasa-logo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Apod from "@/components/Apod/Apod";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <div className="min-h-dvh flex flex-col items-center justify-center bg-gradient-to-t from-black to-blue-900 text-white">
         <Image src={Nasa} alt="Nasa logo" className="my-11 h-40 w-auto" />
         <h1 className="text-4xl font-bold text-center mb-2">
@@ -39,7 +38,7 @@ export default function Home() {
                   "0 0 15px rgba(0, 175, 255, 0.5), 0 0 30px rgba(0, 175, 255, 0.3)",
               }}
             >
-              🌌 História
+              📖 História
             </motion.div>
           </Link>
           <Link href="/pages/legado">
@@ -65,7 +64,7 @@ export default function Home() {
                   "0 0 15px rgba(0, 175, 255, 0.5), 0 0 30px rgba(0, 175, 255, 0.3)",
               }}
             >
-              🌌 Legado
+              📜 Legado
             </motion.div>
           </Link>
           <Link href="/pages/vida">
@@ -91,7 +90,7 @@ export default function Home() {
                   "0 0 15px rgba(0, 175, 255, 0.5), 0 0 30px rgba(0, 175, 255, 0.3)",
               }}
             >
-              🌌 Vida
+              🍃 Vida
             </motion.div>
           </Link>
           <Link href="/pages/teorias">
@@ -123,6 +122,6 @@ export default function Home() {
         </div>
         <Apod></Apod>
       </div>
-    </div>
+    </main>
   );
 }
