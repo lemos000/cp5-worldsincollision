@@ -38,12 +38,12 @@ Antes de iniciar, você precisará ter o [Node.js](https://nodejs.org/) e o [Git
 
 1. **Clone o repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/worlds-in-collision.git
+    git clone https://github.com/lemos000/cp5-worldsincollision.git
     ```
 
 2. **Entre no diretório do projeto:**
     ```bash
-    cd worlds-in-collision
+    cd cp5-worldsincollision
     ```
 
 3. **Instale as dependências:**
